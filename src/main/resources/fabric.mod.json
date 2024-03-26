@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "cogito",
+  "version": "${version}",
+  "name": "Cogito",
+  "description": "Face the Fear,Build the Future.\n直面恐惧，创造未来。",
+  "authors": [
+    "Aida"
+  ],
+  "contact": {
+    "website": "https://space.bilibili.com/1457962072",
+    "repo": "https://github.com/Lanlag/Cogito"
+  },
+  "license": "MIT",
+  "icon": "assets/cogito/cogito_logo.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "net.uniego.aida.cogito.CogitoClient"
+    ],
+    "main": [
+      "net.uniego.aida.cogito.CogitoMain"
+    ]
+  },
+  "mixins": [
+    "cogito.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
